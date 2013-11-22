@@ -19,25 +19,22 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/firstname"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="15pt" />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
                 android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="15pt" >
+                android:inputType="textPersonName" >
 
                 <requestFocus />
             </EditText>
@@ -47,85 +44,102 @@
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lastname"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:inputType="textPersonName" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/birthdate"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="date"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:inputType="date" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
                 android:id="@+id/editText4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:ems="10" />
 
         </TableRow>
-    </TableLayout>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="100pt"
-        android:text="@string/registersave" />
+            <Spinner
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@string/language" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5pt" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/registerback" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/registersave" />
+            
+        </TableRow>
+        
+    </TableLayout>    
 
 </LinearLayout>
