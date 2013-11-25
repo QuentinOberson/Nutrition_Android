@@ -85,14 +85,12 @@
 
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_width="match_parent"
             android:layout_marginLeft="5pt"
-            android:layout_marginRight="100pt"
+            android:layout_marginRight="80pt"
             android:layout_marginTop="5pt"
             android:entries="@array/lang_arrays"
-            android:gravity="center"
             android:prompt="@string/lang_prompt"
-            android:textSize="10pt" />
+            android:textSize="5pt" />
         
         <TableRow
             android:id="@+id/tableRow6"

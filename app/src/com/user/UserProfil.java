@@ -1,21 +1,24 @@
-package com.example.nutrition_guardian;
+package com.user;
 
-import android.app.Activity;
+import com.example.nutrition_guardian.R;
+
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.Menu;
 
-public class RegisterActivity extends Activity{
-	
+public class UserProfil extends Activity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_register);
+		setContentView(R.layout.activity_user_profil);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.user_profil, menu);
 		return true;
 	}
+
 }

@@ -1,4 +1,7 @@
-package com.example.nutrition_guardian;
+package com.login_register;
+
+import com.example.nutrition_guardian.R;
+import com.user.MainPageUser;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

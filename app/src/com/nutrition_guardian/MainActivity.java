@@ -1,4 +1,8 @@
-package com.example.nutrition_guardian;
+package com.nutrition_guardian;
+
+import com.example.nutrition_guardian.R;
+import com.login_register.LoginActivity;
+import com.login_register.RegisterActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,29 +13,26 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
-	
+
 	private Button buttonregister;
 	private Button buttonlogin;
-	
+
 	private Intent intent_RegisterActivity;
 	private Intent intent_LoginActivity;
-	
 
-
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		Aktion aktion = new Aktion();
-		
-		buttonregister = (Button)this.findViewById(R.id.button2);
-		buttonlogin = (Button)this.findViewById(R.id.button1);
-		
+
+		buttonregister = (Button) this.findViewById(R.id.button2);
+		buttonlogin = (Button) this.findViewById(R.id.button1);
+
 		intent_RegisterActivity = new Intent(this, RegisterActivity.class);
 		intent_LoginActivity = new Intent(this, LoginActivity.class);
-		
+
 		buttonregister.setOnClickListener(aktion);
 		buttonlogin.setOnClickListener(aktion);
 	}
@@ -43,21 +44,19 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	private class Aktion implements OnClickListener{
+	private class Aktion implements OnClickListener {
 
 		@Override
 		public void onClick(View view) {
-			
-			if(view == buttonregister){
+
+			if (view == buttonregister) {
 				MainActivity.this.startActivity(intent_RegisterActivity);
 			}
-			
-			if(view == buttonlogin){
+
+			if (view == buttonlogin) {
 				MainActivity.this.startActivity(intent_LoginActivity);
 			}
-			
 
-			
-		}		
-	}	
+		}
+	}
 }

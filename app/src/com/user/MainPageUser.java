@@ -1,5 +1,9 @@
-package com.example.nutrition_guardian;
+package com.user;
 
+
+import com.example.nutrition_guardian.R;
+import com.nutrition_guardian.EnterPlates;
+import com.nutrition_guardian.Statistics;
 
 import android.app.Activity;
 import android.content.Intent;
