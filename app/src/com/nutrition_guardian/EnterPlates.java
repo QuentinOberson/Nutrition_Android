@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 public class EnterPlates extends Activity {
 
 	// values of the plates
-	private float values[] = { 350, 200, 50 };
+	private float values[] = { 350, 200, 60 };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
