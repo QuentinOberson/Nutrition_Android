@@ -11,8 +11,14 @@ import android.widget.Button;
 public class MainActivity extends Activity {
 	
 	private Button buttonregister;
-	private Intent intent;
+	private Button buttonlogin;
+	
+	private Intent intent_RegisterActivity;
+	private Intent intent_LoginActivity;
+	
 
+
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,9 +27,13 @@ public class MainActivity extends Activity {
 		Aktion aktion = new Aktion();
 		
 		buttonregister = (Button)this.findViewById(R.id.button2);
-		intent = new Intent(this, RegisterActivity.class);
+		buttonlogin = (Button)this.findViewById(R.id.button1);
+		
+		intent_RegisterActivity = new Intent(this, RegisterActivity.class);
+		intent_LoginActivity = new Intent(this, LoginActivity.class);
 		
 		buttonregister.setOnClickListener(aktion);
+		buttonlogin.setOnClickListener(aktion);
 	}
 
 	@Override
@@ -39,8 +49,15 @@ public class MainActivity extends Activity {
 		public void onClick(View view) {
 			
 			if(view == buttonregister){
-				MainActivity.this.startActivity(intent);
+				MainActivity.this.startActivity(intent_RegisterActivity);
 			}
+			
+			if(view == buttonlogin){
+				MainActivity.this.startActivity(intent_LoginActivity);
+			}
+			
+
+			
 		}		
 	}	
 }

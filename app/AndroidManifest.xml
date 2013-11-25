@@ -21,7 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="RegisterActivity"></activity>
+        <activity android:name="com.example.nutrition_guardian.RegisterActivity" >
+        </activity>
+        <activity android:name="com.example.nutrition_guardian.MainPage" >
+        </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
     </application>
 
 </manifest>

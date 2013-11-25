@@ -15,12 +15,10 @@
     <string name="email">E-Mail</string>
     <string name="registration">Please enter all the required specifications</string>
     <string name="registersave">save</string>
-    <string name="registerback">back</string>
-    
-    <string-array name="spinner1">
-        <item>German</item>
-        <item>French</item>
-        <item>English</item>
-    </string-array>
 
+    <!-- activity_mainpage -->
+    <string name="EditProfil">Edit Profil</string>
+    <string name="EnterPlates">Enter Plates</string>
+    <string name="Statistics">Statistics</string>
+    
 </resources>
