@@ -23,12 +23,24 @@
         </activity>
         <activity android:name="com.example.nutrition_guardian.RegisterActivity" >
         </activity>
-        <activity android:name="com.example.nutrition_guardian.MainPage" >
+        <activity android:name="com.example.nutrition_guardian.MainPageUser" >
         </activity>
         <activity
             android:name="com.example.nutrition_guardian.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.EnterPlates"
+            android:label="@string/title_activity_enter_plates" >
+        </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.UserProfil"
+            android:label="@string/title_activity_user_profil" >
+        </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.Statistics"
+            android:label="@string/title_activity_statistics" >
         </activity>
     </application>
 

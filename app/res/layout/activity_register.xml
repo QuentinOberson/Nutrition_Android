@@ -8,8 +8,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5pt"
         android:text="@string/registration"
-        android:layout_margin ="5pt"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TableLayout
@@ -25,81 +25,88 @@
                 android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="5pt"
                 android:ems="10"
                 android:hint="@string/firstname"
-                android:inputType="textPersonName"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="15pt" >
+                android:inputType="textPersonName" >
 
                 <requestFocus />
             </EditText>
-
         </TableRow>
 
-       <TableRow
+        <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
-
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/lastname"
-                android:ems="10"
-                android:inputType="textPersonName"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
-
+                android:layout_marginTop="5pt"
+                android:ems="10"
+                android:hint="@string/lastname"
+                android:inputType="textPersonName" />
         </TableRow>
 
-       <TableRow
+        <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
-
 
             <EditText
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/birthdate"
-                android:ems="10"
-                android:inputType="date"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
-
+                android:layout_marginTop="5pt"
+                android:ems="10"
+                android:hint="@string/birthdate"
+                android:inputType="textPersonName" />
         </TableRow>
 
-       <TableRow
+        <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
-
 
             <EditText
                 android:id="@+id/editText4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
-                android:ems="10"
-                android:inputType="textEmailAddress"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="20pt" />
+                android:layout_marginTop="5pt"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </TableRow>
 
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="100pt"
+            android:layout_marginTop="5pt"
+            android:entries="@array/lang_arrays"
+            android:gravity="center"
+            android:prompt="@string/lang_prompt"
+            android:textSize="10pt" />
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100pt"
+                android:layout_marginTop="5pt"
+                android:text="@string/registersave" />
         </TableRow>
     </TableLayout>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="100pt"
-        android:text="@string/registersave" />
 
 </LinearLayout>

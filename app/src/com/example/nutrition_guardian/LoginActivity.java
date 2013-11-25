@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,11 +48,16 @@ public class LoginActivity extends Activity {
 	private View mLoginFormView;
 	private View mLoginStatusView;
 	private TextView mLoginStatusMessageView;
+	
+	// Intent
+	private Intent intent_mainUserPage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		intent_mainUserPage = new Intent(this, MainPageUser.class);
+		
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
@@ -224,8 +230,11 @@ public class LoginActivity extends Activity {
 			mAuthTask = null;
 			showProgress(false);
 
+			// If login success
 			if (success) {
 				finish();
+				// start the activity mainPageUser
+				LoginActivity.this.startActivity(intent_mainUserPage);
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));

@@ -27,13 +27,13 @@
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/EditProfil" 
-            	android:layout_marginLeft="100dp" />
+                android:text="@string/EditProfil"
+                android:layout_marginLeft="100dp"/>
+
 
         </TableRow>
 
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Statistics"
-                 android:layout_marginLeft="100dp" /> />
+                 android:layout_marginLeft="100dp" />
 
         </TableRow>
 
