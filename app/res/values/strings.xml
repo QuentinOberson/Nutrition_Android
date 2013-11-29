@@ -30,9 +30,12 @@
         <item>Deutsch</item>
     </string-array>
 
+    <!-- Language -->
     <string name="title_activity_enter_plates">EnterPlates</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_user_profil">UserProfil</string>
     <string name="title_activity_statistics">Statistics</string>
+    
+     <!-- Enter Plates -->
+      <string name="pourcentage">%</string>
 
 </resources>

@@ -11,14 +11,21 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.text.Editable;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class EnterPlates extends Activity {
 
 	// values of the plates
 	private float values[] = { 350, 200, 60 };
+	private EditText edit1 ;
+	private EditText edit2 ;
+	private EditText edit3 ;
+	private String i ;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +33,11 @@ public class EnterPlates extends Activity {
 		setContentView(R.layout.activity_enter_plates);
 
 		LinearLayout lv1 = (LinearLayout) findViewById(R.id.linear);
+		EditText edit1 = (EditText) findViewById(R.id.editTextfood1);
 
+		//int percent = Integer.parseInt(edit1.getText().toString());
+
+		
 		values = calculateData(values);
 		MyGraphview graphview = new MyGraphview(this, values);
 		lv1.addView(graphview);
