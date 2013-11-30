@@ -1,5 +1,7 @@
 package com.login_register;
 
+import java.math.BigInteger;
+
 import com.example.nutrition_guardian.R;
 import com.user.MainPageUser;
 
@@ -18,6 +20,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Activity which displays a login screen to the user, offering registration as
@@ -51,7 +54,7 @@ public class LoginActivity extends Activity {
 	private View mLoginFormView;
 	private View mLoginStatusView;
 	private TextView mLoginStatusMessageView;
-	
+
 	// Intent
 	private Intent intent_mainUserPage;
 
@@ -60,7 +63,7 @@ public class LoginActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		intent_mainUserPage = new Intent(this, MainPageUser.class);
-		
+
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
@@ -101,6 +104,7 @@ public class LoginActivity extends Activity {
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
 	}
+
 
 	/**
 	 * Attempts to sign in or register the account specified by the login form.

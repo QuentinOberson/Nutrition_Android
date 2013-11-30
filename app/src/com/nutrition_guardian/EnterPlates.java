@@ -20,11 +20,12 @@ import android.widget.LinearLayout;
 public class EnterPlates extends Activity {
 
 	// values of the plates
-	private float values[] = { 350, 200, 60 };
+	private float values[] = { 20, 20, 20, 20 };
 	private EditText edit1 ;
 	private EditText edit2 ;
 	private EditText edit3 ;
-	private String i ;
+	private EditText edit4 ;
+	private EditText edit5 ;
 	
 
 	@Override

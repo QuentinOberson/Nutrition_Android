@@ -3,45 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="120pt"
-        android:layout_height="100pt"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal" >
-    </LinearLayout>
-
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="0pt" >
+        android:layout_alignParentRight="true" >
 
         <TableRow
             android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0pt" >
+            android:layout_width="40pt"
+            android:layout_marginTop="1pt"
+            android:layout_marginBottom="1pt"
+            android:layout_height="10pt" >
 
             <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="80pt"
                 android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:layout_marginTop="2pt" />
+                android:layout_marginRight="10pt" />
 
             <EditText
                 android:id="@+id/editTextfood1"
                 android:layout_width="20pt"
                 android:layout_height="20pt"
-                android:layout_marginLeft="0pt"
-                android:layout_marginRight="1000pt"
-                android:layout_marginBottom="12pt"
                 android:ems="10"
                 android:hint="@string/pourcentage"
                 android:inputType="textEmailAddress" >
+
+                <requestFocus />
             </EditText>
         </TableRow>
 
@@ -52,18 +42,14 @@
 
             <Spinner
                 android:id="@+id/spinner2"
-                android:layout_width="60pt"
+                android:layout_width="80pt"
                 android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:layout_marginTop="2pt" />
+                android:layout_marginRight="10pt" />
 
             <EditText
                 android:id="@+id/editTextfood2"
                 android:layout_width="20pt"
                 android:layout_height="20pt"
-                android:layout_marginLeft="0pt"
-                android:layout_marginRight="1000pt"
-                android:layout_marginBottom="12pt"
                 android:ems="10"
                 android:hint="@string/pourcentage"
                 android:inputType="textEmailAddress" >
@@ -77,23 +63,72 @@
 
             <Spinner
                 android:id="@+id/spinner3"
-                android:layout_width="60pt"
+                android:layout_width="80pt"
                 android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:layout_marginTop="2pt" />
+                android:layout_marginRight="10pt"/>
 
             <EditText
                 android:id="@+id/editTextfood3"
                 android:layout_width="20pt"
                 android:layout_height="20pt"
-                android:layout_marginLeft="0pt"
-                android:layout_marginRight="1000pt"
-                android:layout_marginBottom="12pt"
+                android:ems="10"
+                android:hint="@string/pourcentage"
+                android:inputType="textEmailAddress" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="80pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="10pt" />
+
+            <EditText
+                android:id="@+id/editTextfood4"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:ems="10"
+                android:hint="@string/pourcentage"
+                android:inputType="textEmailAddress" >
+            </EditText>
+        </TableRow>
+        
+                <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="80pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="10pt" />
+
+            <EditText
+                android:id="@+id/editTextfood5"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
                 android:ems="10"
                 android:hint="@string/pourcentage"
                 android:inputType="textEmailAddress" >
             </EditText>
         </TableRow>
     </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="120pt"
+        android:layout_height="90pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
 
 </RelativeLayout>

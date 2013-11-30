@@ -1,17 +1,52 @@
 package com.login_register;
 
+import java.math.BigInteger;
+
 import com.example.nutrition_guardian.R;
+import com.user.MainPageUser;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
-public class RegisterActivity extends Activity{
-	
+public class RegisterActivity extends Activity {
+
+	private EditText firstname;
+	private EditText lastname;
+	private EditText birthdate;
+	private EditText email;
+	private Spinner langSpinner;
+	private Button save;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
+
+		firstname = (EditText) findViewById(R.id.editText1);
+		lastname = (EditText) findViewById(R.id.editText2);
+		birthdate = (EditText) findViewById(R.id.editText3);
+		email = (EditText) findViewById(R.id.editText4);
+		save = (Button) findViewById(R.id.button1);
+		langSpinner = (Spinner) findViewById(R.id.spinner1);
+		
+		save.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+
+				// Save into DB...
+
+			}
+		});
+
 	}
 
 	@Override
@@ -20,4 +55,5 @@ public class RegisterActivity extends Activity{
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
 }
