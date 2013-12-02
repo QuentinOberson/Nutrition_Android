@@ -8,14 +8,16 @@
     <string name="register">Register</string>
     <string name="login">Login</string>
 
-    <!-- activity_register -->
+    <!-- activity_register & Profil -->
     <string name="firstname">Firstname</string>
     <string name="lastname">Lastname</string>
     <string name="birthdate">Birthdate</string>
     <string name="email">E-Mail</string>
     <string name="password">Password</string>
-    <string name="registration">Please enter all the required specifications</string>
+    <string name="registration">Please enter all the required specifications.</string>
+    <string name="infoUpdate">Here you can update your profil.</string>
     <string name="registersave">Save</string>
+    <string name="update">Update</string>
 
     <!-- activity_mainpage -->
     <string name="EditProfil">Profil</string>
@@ -38,5 +40,6 @@
     
      <!-- Enter Plates -->
       <string name="pourcentage">%</string>
+
 
 </resources>
