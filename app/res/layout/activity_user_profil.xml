@@ -104,21 +104,15 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:id="@+id/tableRow7" >
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="20pt"
+            android:layout_marginLeft="100pt"
+            android:layout_marginRigth="0pt"
             android:text="@string/update" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cancel" />
     </TableRow>
 
 </TableLayout>
