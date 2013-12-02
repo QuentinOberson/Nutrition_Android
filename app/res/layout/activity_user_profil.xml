@@ -111,7 +111,8 @@
             android:layout_height="20pt"
             android:layout_marginLeft="100pt"
             android:layout_marginRight="0pt"
-            android:text="@string/update" />
+            android:text="@string/update"
+            style="@style/btnStyleBreakerBay" />
 
     </TableRow>
 

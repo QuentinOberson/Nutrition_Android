@@ -123,7 +123,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100pt"
                 android:layout_marginTop="5pt"
-                android:text="@string/registersave" />
+                android:text="@string/registersave"
+                style="@style/btnStyleBreakerBay"  />
         </TableRow>
     </TableLayout>
 

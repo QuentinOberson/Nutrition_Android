@@ -14,13 +14,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
-        android:onClick="buttonregister" />
+        android:onClick="buttonregister"
+        style="@style/btnStyleBreakerBay" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login" />
+        android:text="@string/login"
+        style="@style/btnStyleBreakerBay"  />
 
     <TextView
         android:id="@+id/textView1"

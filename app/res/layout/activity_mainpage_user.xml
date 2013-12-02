@@ -19,7 +19,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/EnterPlates"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="100dp"/>
+                android:layout_marginTop="100dp"
+                style="@style/btnStyleBreakerBay" />
 
         </TableRow>
 
@@ -32,7 +33,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/EditProfil"
-                android:layout_marginLeft="100dp"/>
+                android:layout_marginLeft="100dp"
+                style="@style/btnStyleBreakerBay" />
 
 
         </TableRow>
@@ -47,7 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Statistics"
-                 android:layout_marginLeft="100dp" />
+                 android:layout_marginLeft="100dp"
+                 style="@style/btnStyleBreakerBay"  />
 
         </TableRow>
 
