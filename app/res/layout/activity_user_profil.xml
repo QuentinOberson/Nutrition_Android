@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-        <TextView
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,8 +19,8 @@
 
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_marginLeft="5pt"
-            android:layout_marginRight="80pt"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="5pt"
             android:layout_marginTop="5pt"
             android:entries="@array/lang_arrays" />
     </TableRow>
@@ -112,9 +112,13 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100pt"
-            android:layout_marginTop="5pt"
             android:text="@string/update" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
     </TableRow>
 
 </TableLayout>

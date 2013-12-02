@@ -2,7 +2,7 @@
 <resources>
 
     <!-- activity_main -->
-    <string name="app_name">Nutrition_Guardian</string>
+    <string name="app_name">Nutrition Guardian</string>
     <string name="action_settings">Settings</string>
     <string name="developer">© Quentin Oberson, Vincent Pont, Kevin Wyer</string>
     <string name="register">Register</string>
@@ -17,7 +17,6 @@
     <string name="registration">Please enter all the required specifications.</string>
     <string name="infoUpdate">Here you can update your profil.</string>
     <string name="registersave">Save</string>
-    <string name="update">Update</string>
 
     <!-- activity_mainpage -->
     <string name="EditProfil">Profil</string>
@@ -41,5 +40,8 @@
      <!-- Enter Plates -->
       <string name="pourcentage">%</string>
 
-
+	<!-- Profil user -->
+	<string name="update">Update</string>
+	<string name="cancel">Cancel</string>
+      
 </resources>
