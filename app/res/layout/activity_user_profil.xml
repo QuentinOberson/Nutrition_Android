@@ -20,7 +20,7 @@
         <Spinner
             android:id="@+id/spinner1"
             android:layout_marginLeft="8pt"
-            android:layout_marginRight="5pt"
+            android:layout_marginRight="80pt"
             android:layout_marginTop="5pt"
             android:entries="@array/lang_arrays" />
     </TableRow>
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editTextFirstname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextLastname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextBirthdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editTextEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
@@ -94,13 +94,13 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/editTextPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
             android:layout_marginTop="5pt"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textVisiblePassword" />
     </TableRow>
 
     <TableRow
@@ -110,7 +110,7 @@
             android:id="@+id/button1"
             android:layout_height="20pt"
             android:layout_marginLeft="100pt"
-            android:layout_marginRigth="0pt"
+            android:layout_marginRight="0pt"
             android:text="@string/update" />
 
     </TableRow>

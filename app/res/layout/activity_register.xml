@@ -109,7 +109,7 @@
                 android:layout_marginTop="5pt"
                 android:ems="10"
                 android:hint="@string/password"
-                android:inputType="textEmailAddress" />
+                android:inputType="textVisiblePassword" />
         </TableRow>
 
         <TableRow
