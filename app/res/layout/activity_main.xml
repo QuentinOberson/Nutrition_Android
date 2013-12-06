@@ -16,6 +16,14 @@
         android:text="@string/register"
         android:onClick="buttonregister"
         style="@style/btnStyleBreakerBay" />
+    
+        <Button
+        android:id="@+id/buttonRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TestRest"
+        style="@style/btnStyleBreakerBay" />
+
 
     <Button
         android:id="@+id/button1"
