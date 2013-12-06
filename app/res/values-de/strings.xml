@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity_main -->
+    <string name="app_name">Nutrition Guardian</string>
+    <string name="action_settings">Settings</string>
+    <string name="developer">© Quentin Oberson, Vincent Pont, Kevin Wyer</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+
+    <!-- activity_register & Profil -->
+    <string name="firstname">Vorname</string>
+    <string name="lastname">Nachname</string>
+    <string name="birthdate">Geburtsdatum</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Passwort</string>
+    <string name="registration">Bitte geben Sie alle erforderlichen Angaben ein.</string>
+    <string name="infoUpdate">Here you can update your profil.</string>
+    <string name="registersave">Speichern</string>
+
+    <!-- activity_mainpage -->
+    <string name="EditProfil">Profil</string>
+    <string name="EnterPlates">Enter Plates</string>
+    <string name="Statistics">Statistics</string>
+
+    <!-- Language -->
+    <string name="lang_prompt">Choose a language</string>
+
+    <string-array name="lang_arrays">
+        <item>French</item>
+        <item>English</item>
+        <item>Deutsch</item>
+    </string-array>
+
+    <!-- Language -->
+    <string name="title_activity_enter_plates">EnterPlates</string>
+    <string name="title_activity_user_profil">UserProfil</string>
+    <string name="title_activity_statistics">Statistics</string>
+    
+     <!-- Enter Plates -->
+      <string name="pourcentage">%</string>
+
+	<!-- Profil user -->
+	<string name="update">Update</string>
+	<string name="cancel">Cancel</string>
+      
+</resources>
