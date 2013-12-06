@@ -2,8 +2,8 @@ package com.user;
 
 
 import com.example.nutrition_guardian.R;
-import com.nutrition_guardian.EnterPlates;
-import com.nutrition_guardian.Statistics;
+import com.nutrition_guardian.EnterPlatesActivity;
+import com.nutrition_guardian.StatisticsActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -34,8 +34,8 @@ public class MainPageUser extends Activity {
 		buttonStatistics = (Button)this.findViewById(R.id.button3); 
 		
 		intent_Profil = new Intent(this, UserProfil.class);
-		intent_Plates = new Intent(this, EnterPlates.class);
-		intent_Statistics = new Intent(this, Statistics.class);
+		intent_Plates = new Intent(this, EnterPlatesActivity.class);
+		intent_Statistics = new Intent(this, StatisticsActivity.class);
 		
 	     // Profil listener
 	     OnClickListener button1 = new OnClickListener() {

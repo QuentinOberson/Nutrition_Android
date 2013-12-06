@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class Statistics extends Activity {
+public class StatisticsActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

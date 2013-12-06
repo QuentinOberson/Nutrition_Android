@@ -33,7 +33,7 @@
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="com.nutrition_guardian.EnterPlates"
+            android:name="com.nutrition_guardian.EnterPlatesActivity"
             android:label="@string/title_activity_enter_plates" >
         </activity>
         <activity
@@ -41,7 +41,7 @@
             android:label="@string/title_activity_user_profil" >
         </activity>
         <activity
-            android:name="com.nutrition_guardian.Statistics"
+            android:name="com.nutrition_guardian.StatisticsActivity"
             android:label="@string/title_activity_statistics" >
         </activity>
     </application>

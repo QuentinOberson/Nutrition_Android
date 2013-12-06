@@ -17,7 +17,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-public class EnterPlates extends Activity {
+public class EnterPlatesActivity extends Activity {
 
 	// values of the plates
 	private float values[] = { 20, 20, 20, 20, 20 };
