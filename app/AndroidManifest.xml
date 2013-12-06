@@ -44,6 +44,10 @@
             android:name="com.nutrition_guardian.StatisticsActivity"
             android:label="@string/title_activity_statistics" >
         </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.TestRestActivity"
+            android:label="@string/title_activity_test_rest" >
+        </activity>
     </application>
 
 </manifest>

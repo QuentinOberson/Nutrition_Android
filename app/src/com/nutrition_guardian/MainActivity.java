@@ -1,6 +1,7 @@
 package com.nutrition_guardian;
 
 import com.example.nutrition_guardian.R;
+import com.example.nutrition_guardian.TestRestActivity;
 import com.login_register.LoginActivity;
 import com.login_register.RegisterActivity;
 
@@ -16,9 +17,11 @@ public class MainActivity extends Activity {
 
 	private Button buttonregister;
 	private Button buttonlogin;
+	private Button buttontestREST;
 
 	private Intent intent_RegisterActivity;
 	private Intent intent_LoginActivity;
+	private Intent intent_restGet;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +32,15 @@ public class MainActivity extends Activity {
 
 		buttonregister = (Button) this.findViewById(R.id.button2);
 		buttonlogin = (Button) this.findViewById(R.id.button1);
+		buttontestREST = (Button) this.findViewById(R.id.buttonRest);
 
 		intent_RegisterActivity = new Intent(this, RegisterActivity.class);
 		intent_LoginActivity = new Intent(this, LoginActivity.class);
+		intent_restGet = new Intent(this, TestRestActivity.class);
 
 		buttonregister.setOnClickListener(aktion);
 		buttonlogin.setOnClickListener(aktion);
+		buttontestREST.setOnClickListener(aktion);
 	}
 
 	@Override
@@ -55,6 +61,10 @@ public class MainActivity extends Activity {
 
 			if (view == buttonlogin) {
 				MainActivity.this.startActivity(intent_LoginActivity);
+			}
+			
+			if (view == buttontestREST) {
+				MainActivity.this.startActivity(intent_restGet);
 			}
 
 		}

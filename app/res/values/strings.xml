@@ -36,12 +36,14 @@
     <string name="title_activity_enter_plates">EnterPlates</string>
     <string name="title_activity_user_profil">UserProfil</string>
     <string name="title_activity_statistics">Statistics</string>
-    
-     <!-- Enter Plates -->
-      <string name="pourcentage">%</string>
 
-	<!-- Profil user -->
-	<string name="update">Update</string>
-	<string name="cancel">Cancel</string>
-      
+    <!-- Enter Plates -->
+    <string name="pourcentage">%</string>
+
+    <!-- Profil user -->
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_test_rest">TestRestActivity</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>
