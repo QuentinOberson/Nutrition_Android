@@ -118,7 +118,6 @@ public class LoginActivity extends Activity {
 		return true;
 	}
 
-
 	/**
 	 * Attempts to sign in or register the account specified by the login form.
 	 * If there are form errors (invalid email, missing fields, etc.), the
@@ -256,7 +255,7 @@ public class LoginActivity extends Activity {
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);
 				//set the language from the user whoes logged in
-				setLocale("en");
+				//setLocale("en");
 			} else {
 				mPasswordView
 				.setError(getString(R.string.error_incorrect_password));

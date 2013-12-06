@@ -9,20 +9,23 @@
         style="@style/btnStyleBreakerBay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/EnterPlates" />
+        android:text="@string/EnterPlates"
+        android:layout_marginTop="5pt" />
 
     <Button
         android:id="@+id/button2"
         style="@style/btnStyleBreakerBay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/EditProfil" />
+        android:text="@string/EditProfil"
+        android:layout_marginTop="5pt" />
 
     <Button
         android:id="@+id/button3"
         style="@style/btnStyleBreakerBay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Statistics" />
+        android:text="@string/Statistics"
+        android:layout_marginTop="5pt" />
 
 </LinearLayout>

@@ -1,119 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_margin="5pt"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5pt"
         android:text="@string/infoUpdate"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TableRow
-        android:id="@+id/tableRow6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lang_arrays" />
 
-        <Spinner
-            android:id="@+id/spinner1"
-            android:layout_marginLeft="8pt"
-            android:layout_marginRight="80pt"
-            android:layout_marginTop="5pt"
-            android:entries="@array/lang_arrays" />
-    </TableRow>
+    <EditText
+        android:id="@+id/editTextFirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <requestFocus />
 
-    <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/editTextFirstname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginTop="5pt"
-            android:ems="10"
-            android:inputType="textPersonName" >
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:ems="10"
+        android:inputType="textPersonName" >
+    </EditText>
 
-            <requestFocus />
-        </EditText>
-    </TableRow>
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
-    <TableRow
-        android:id="@+id/tableRow2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
 
-        <EditText
-            android:id="@+id/editTextLastname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginTop="5pt"
-            android:ems="10"
-            android:inputType="textPersonName" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <EditText
-            android:id="@+id/editTextBirthdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginTop="5pt"
-            android:ems="10"
-            android:inputType="textPersonName" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginTop="5pt"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginTop="5pt"
-            android:ems="10"
-            android:inputType="textVisiblePassword" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow7" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_height="20pt"
-            android:layout_marginLeft="100pt"
-            android:layout_marginRight="0pt"
-            android:text="@string/update"
-            style="@style/btnStyleBreakerBay" />
-
-    </TableRow>
-
-</TableLayout>
+</LinearLayout>
