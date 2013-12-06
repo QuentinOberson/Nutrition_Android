@@ -4,57 +4,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TableLayout
+    <Button
+        android:id="@+id/button1"
+        style="@style/btnStyleBreakerBay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:text="@string/EnterPlates" />
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+    <Button
+        android:id="@+id/button2"
+        style="@style/btnStyleBreakerBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EditProfil" />
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/EnterPlates"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="100dp"
-                style="@style/btnStyleBreakerBay" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/EditProfil"
-                android:layout_marginLeft="100dp"
-                style="@style/btnStyleBreakerBay" />
-
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Statistics"
-                 android:layout_marginLeft="100dp"
-                 style="@style/btnStyleBreakerBay"  />
-
-        </TableRow>
-
-        
-    </TableLayout>
+    <Button
+        android:id="@+id/button3"
+        style="@style/btnStyleBreakerBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Statistics" />
 
 </LinearLayout>

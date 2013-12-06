@@ -20,15 +20,15 @@
 
     <!-- activity_mainpage -->
     <string name="EditProfil">Profil</string>
-    <string name="EnterPlates">Enter Plates</string>
-    <string name="Statistics">Statistics</string>
+    <string name="EnterPlates">Mahlzeit eingeben</string>
+    <string name="Statistics">Statistik</string>
 
     <!-- Language -->
-    <string name="lang_prompt">Choose a language</string>
+    <string name="lang_prompt">Wählen Sie eine Sprache aus</string>
 
     <string-array name="lang_arrays">
-        <item>French</item>
-        <item>English</item>
+        <item>Französisch</item>
+        <item>Englisch</item>
         <item>Deutsch</item>
     </string-array>
 
