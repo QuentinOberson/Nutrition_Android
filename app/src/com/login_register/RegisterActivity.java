@@ -6,6 +6,7 @@ import com.example.nutrition_guardian.R;
 import com.user.MainPageUser;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -44,8 +45,20 @@ public class RegisterActivity extends Activity {
 
 				// Save into DB...
 
+				showMessage("Your account is successfully created");
 			}
 		});
+
+	}
+	
+	// To show message register
+	private void showMessage(String message) {
+
+		Context context = getApplicationContext();
+		int duration = Toast.LENGTH_LONG;
+
+		Toast toast = Toast.makeText(context, message, duration);
+		toast.show();
 
 	}
 

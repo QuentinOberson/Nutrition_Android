@@ -48,6 +48,10 @@
             android:name="com.example.nutrition_guardian.TestRestActivity"
             android:label="@string/title_activity_test_rest" >
         </activity>
+        <activity
+            android:name="com.example.nutrition_guardian.EnterPlates_graph"
+            android:label="@string/title_activity_enter_plates_graph" >
+        </activity>
     </application>
 
 </manifest>

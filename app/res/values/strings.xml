@@ -38,12 +38,26 @@
     <string name="title_activity_statistics">Statistics</string>
 
     <!-- Enter Plates -->
-    <string name="pourcentage">%</string>
+    <string name="pourcentage">0%</string>
+    <string name="header">Here enter in percentage your food.</string>
+       <string name="next">Next</string>
+
+    <string-array name="food">
+        <item>Nothing Selected</item>
+        <item>Potatoes</item>
+        <item>Meat</item>
+        <item>Toma2toes</item>
+        <item>Meat23f</item>
+        <item>Tomaftoes23</item>
+        <item>Meat243</item>
+        <item>Tomatoes123</item>
+    </string-array>
 
     <!-- Profil user -->
     <string name="update">Update</string>
     <string name="cancel">Cancel</string>
     <string name="title_activity_test_rest">TestRestActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_enter_plates_graph">EnterPlates_graph</string>
 
 </resources>
