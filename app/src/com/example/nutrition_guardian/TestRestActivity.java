@@ -3,10 +3,8 @@ package com.example.nutrition_guardian;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import com.example.businessentities.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -26,22 +24,12 @@ public class TestRestActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_test_rest);
 
-		// GET , Récupération avec string
-		/*
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
-
-		String resultat = (String) rest1.doInBackgroundObject() ;
-
-		textView1 = (TextView) findViewById(R.id.textViewRest);
-
-		textView1.setText(resultat) ;	
-		 */
-		
+			
 		// GET, Récupération avec objet
 		/*
 		LongRunningGetIO rest1 = new LongRunningGetIO() ;
 
-		JSONObject resultat = (JSONObject) rest1.doInBackgroundObject() ;
+		JSONObject resultat = (JSONObject) rest1.GetObject() ;
 		
 		try {
 			
@@ -99,6 +87,7 @@ public class TestRestActivity extends Activity {
 		 */
 		
 		//POST  Envoie list objets
+		/*
 		List<User> listUsers = new ArrayList<User>() ;
 		listUsers.add(new User(1, "Quentin", "Ducon")) ;
 		listUsers.add(new User(2, "Robert", "De la couille")) ;
@@ -107,7 +96,7 @@ public class TestRestActivity extends Activity {
 		Gson gson = new Gson() ;
 		LongRunningGetIO rest1 = new LongRunningGetIO() ;
 		rest1.PostObjectList(gson.toJson(listUsers));
-		 
+		*/
 		
 		
 	}
