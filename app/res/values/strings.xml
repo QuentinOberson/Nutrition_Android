@@ -40,7 +40,15 @@
     <!-- Enter Plates -->
     <string name="pourcentage">0%</string>
     <string name="header">Here enter in percentage your food.</string>
-       <string name="next">Next</string>
+    <string name="next">Next</string>
+    <string name="sizePlates">Select size of the plates :</string>
+    
+    <string-array name="size">
+        <item>Nothing Selected</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
 
     <string-array name="food">
         <item>Nothing Selected</item>

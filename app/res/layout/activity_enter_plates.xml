@@ -1,150 +1,171 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true" >
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="5pt"
-        android:text="@string/header"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="5pt"
+        android:layout_height="5pt"
+        android:layout_marginTop="5pt" >
 
-    <TableLayout
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="15pt"
+            android:layout_height="25pt"
+            android:layout_marginBottom="5pt"
+            android:layout_marginLeft="5pt"
+            android:text="@string/header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="10pt"
+        android:layout_height="5pt"
+        android:layout_marginBottom="1pt"
+        android:layout_marginTop="5pt" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="10pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:entries="@array/food" />
+
+        <EditText
+            android:id="@+id/editTextfood1"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:ems="10"
+            android:hint="@string/pourcentage"
+            android:inputType="number" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" >
+        android:layout_height="wrap_content" >
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="40pt"
-            android:layout_height="10pt"
-            android:layout_marginBottom="1pt"
-            android:layout_marginTop="1pt" >
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="80pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:entries="@array/food" />
 
-            <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="80pt"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:entries="@array/food" />
+        <EditText
+            android:id="@+id/editTextfood2"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:ems="10"
+            android:hint="@string/pourcentage"
+            android:inputType="number" >
+        </EditText>
+    </TableRow>
 
-            <EditText
-                android:id="@+id/editTextfood1"
-                android:layout_width="30pt"
-                android:layout_height="20pt"
-                android:ems="10"
-                android:hint="@string/pourcentage"
-                android:inputType="number" >
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
 
-            </EditText>
-        </TableRow>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="80pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:entries="@array/food" />
 
-        <TableRow
-            android:id="@+id/tableRow2"
+        <EditText
+            android:id="@+id/editTextfood3"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:ems="10"
+            android:hint="@string/pourcentage"
+            android:inputType="number" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="80pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:entries="@array/food" />
+
+        <EditText
+            android:id="@+id/editTextfood4"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:ems="10"
+            android:hint="@string/pourcentage"
+            android:inputType="number" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="80pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:entries="@array/food" />
+
+        <EditText
+            android:id="@+id/editTextfood5"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:ems="10"
+            android:hint="@string/pourcentage"
+            android:inputType="number" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="10pt"
+            android:layout_height="20pt"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="10pt"
+            android:text="@string/sizePlates" />
+
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:entries="@array/size" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="50pt" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btnStyleBreakerBay"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:text="@string/next" />
+    </TableRow>
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="80pt"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:entries="@array/food" />
-
-            <EditText
-                android:id="@+id/editTextfood2"
-                android:layout_width="30pt"
-                android:layout_height="20pt"
-                android:ems="10"
-                android:hint="@string/pourcentage"
-                android:inputType="number" >
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Spinner
-                android:id="@+id/spinner3"
-                android:layout_width="80pt"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:entries="@array/food" />
-
-            <EditText
-                android:id="@+id/editTextfood3"
-                android:layout_width="30pt"
-                android:layout_height="20pt"
-                android:ems="10"
-                android:hint="@string/pourcentage"
-                android:inputType="number" >
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Spinner
-                android:id="@+id/spinner4"
-                android:layout_width="80pt"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:entries="@array/food" />
-
-            <EditText
-                android:id="@+id/editTextfood4"
-                android:layout_width="30pt"
-                android:layout_height="20pt"
-                android:ems="10"
-                android:hint="@string/pourcentage"
-                android:inputType="number" >
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Spinner
-                android:id="@+id/spinner5"
-                android:layout_width="80pt"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="10pt"
-                android:entries="@array/food" />
-
-            <EditText
-                android:id="@+id/editTextfood5"
-                android:layout_width="30pt"
-                android:layout_height="20pt"
-                android:ems="10"
-                android:hint="@string/pourcentage"
-                android:inputType="number" >
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow6"
-            android:layout_width="136pt"
-            android:layout_height="50pt" >
-
-            <Button
-                android:id="@+id/button1"
-                style="@style/btnStyleBreakerBay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
-                android:text="@string/next" />
-
-        </TableRow>
-    </TableLayout>
-
-</RelativeLayout>
+</TableLayout>
