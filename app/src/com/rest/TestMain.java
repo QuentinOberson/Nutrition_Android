@@ -18,13 +18,14 @@ public class TestMain {
 		System.out.println(result);
 		*/
 		
+		/*
 		LongRunningGetIO rest2 = new LongRunningGetIO();
 		
 		String resultat = rest2.doInBackground1();
 		
 		System.out.println("Résultat :");
 		System.out.println(resultat);
-		
+		*/
 	}
 
 }
