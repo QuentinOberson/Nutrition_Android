@@ -26,9 +26,8 @@ import com.google.gson.reflect.TypeToken;
 
 import android.os.AsyncTask;
 
-public class LongRunningGetIO extends AsyncTask<Void, Void, String> {
+public class RestService extends AsyncTask<Void, Void, String> {
 
-	private JSONObject jsonObject;
 
 	public String getASCIIContentFromEntity(HttpEntity entity)
 			throws IllegalStateException, IOException {
@@ -144,6 +143,7 @@ public class LongRunningGetIO extends AsyncTask<Void, Void, String> {
 			// These is the response of the server, display error message if not okay
 			String respStr = EntityUtils.toString(resp.getEntity());
 			System.out.println(respStr.toString());
+			
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

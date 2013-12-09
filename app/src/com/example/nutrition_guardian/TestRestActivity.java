@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import com.example.businessentities.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rest.LongRunningGetIO;
+import com.rest.RestService;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -27,7 +27,7 @@ public class TestRestActivity extends Activity {
 			
 		// GET, Récupération avec objet
 		/*
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
+		RestService rest1 = new RestService() ;
 
 		JSONObject resultat = (JSONObject) rest1.GetObject() ;
 		
@@ -48,9 +48,9 @@ public class TestRestActivity extends Activity {
 				
 		// GET,  Receive json object depuis serveur
 		/*
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
+		RestService rest1 = new RestService() ;
 		
-		String resultat = (String) rest1.doInBackgroundObject() ;
+		String resultat = (String) rest1.GetObject() ;
 		
 		Gson gson = new Gson();
 		
@@ -59,13 +59,13 @@ public class TestRestActivity extends Activity {
 		textView1.setText(user1.getLastname()) ;
 		*/
 
-		// POST, Envoie gsonobject
+		// POST, Envoie gson object
 		/*
 		User user1 = new User(12, "Quentino", "Rappaz") ;
 		Gson gson = new Gson();
 		String json = gson.toJson(user1) ;
 		
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
+		RestService rest1 = new RestService() ;
 		rest1.PostObject(json);
 		*/
 		
@@ -73,7 +73,7 @@ public class TestRestActivity extends Activity {
 		// GET, Recevoir list objets
 		/*
 		Gson gson = new Gson() ;
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
+		RestService rest1 = new RestService() ;
 		String json = rest1.GetObjectList();
 		
 		Type collectionType = new TypeToken<List<User>>(){}.getType();
@@ -84,7 +84,7 @@ public class TestRestActivity extends Activity {
 		for (User user : ints2) {
 			textView1.append(user.getLastname());
 		}
-		 */
+		*/
 		
 		//POST  Envoie list objets
 		/*
@@ -94,7 +94,7 @@ public class TestRestActivity extends Activity {
 		listUsers.add(new User(3, "Gael", "De la moule")) ;
 		
 		Gson gson = new Gson() ;
-		LongRunningGetIO rest1 = new LongRunningGetIO() ;
+		RestService rest1 = new RestService() ;
 		rest1.PostObjectList(gson.toJson(listUsers));
 		*/
 		
