@@ -54,6 +54,7 @@
             android:name="com.example.nutrition_guardian.EnterPlates_graph"
             android:label="@string/title_activity_enter_plates_graph" >
         </activity>
+        <activity android:name="com.nutrition_guardian.EnterPlatePartsActivity"></activity>
     </application>
 
 </manifest>

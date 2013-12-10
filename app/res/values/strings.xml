@@ -43,6 +43,14 @@
     <string name="next">Next</string>
     <string name="sizePlates">Select size of the plates :</string>
     
+    <string-array name="part">
+        <item>Nothing Selected</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
     <string-array name="size">
         <item>Nothing Selected</item>
         <item>Small</item>
