@@ -44,7 +44,8 @@
     <string name="sizePlates">Select size of the plates :</string>
     
     <string-array name="part">
-        <item>Nothing Selected</item>
+        <item>No of parts</item>
+        <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
@@ -52,23 +53,27 @@
     </string-array>
     
     <string-array name="size">
-        <item>Nothing Selected</item>
+        <item>size of plate</item>
         <item>Small</item>
         <item>Medium</item>
         <item>Large</item>
     </string-array>
+    
+    <string name="partsenter">continue</string>
 
     <string-array name="food">
         <item>Nothing Selected</item>
-        <item>Potatoes</item>
+        <item>Vegetables</item>
         <item>Meat</item>
-        <item>Toma2toes</item>
-        <item>Meat23f</item>
-        <item>Tomaftoes23</item>
-        <item>Meat243</item>
-        <item>Tomatoes123</item>
+        <item>Carbohydrate</item>
     </string-array>
-
+    
+    <string name="warningpourcentage">The sum of the % of each part have to be 100%</string>
+    
+    <string name="warningparts">You have to select a no of parts</string>
+    
+    <string name="hintplates">Here you can select the type of parts and choose the % of each part</string>
+	
     <!-- Profil user -->
     <string name="update">Update</string>
     <string name="cancel">Cancel</string>

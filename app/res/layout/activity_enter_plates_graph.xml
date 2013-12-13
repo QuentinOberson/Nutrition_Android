@@ -8,14 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EnterPlates_graph" >
 
-    
    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="120pt"
-        android:layout_height="90pt"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal" >
-    </LinearLayout>
+       android:id="@+id/linear"
+       android:layout_width="120pt"
+       android:layout_height="90pt"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:orientation="horizontal" >
+   </LinearLayout>
 
 </RelativeLayout>

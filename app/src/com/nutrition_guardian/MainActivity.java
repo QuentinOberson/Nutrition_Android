@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		intent_RegisterActivity = new Intent(this, RegisterActivity.class);
 		intent_LoginActivity = new Intent(this, LoginActivity.class);
 		intent_restGet = new Intent(this, TestRestActivity.class);
-
+		
 		buttonregister.setOnClickListener(aktion);
 		buttonlogin.setOnClickListener(aktion);
 		buttontestREST.setOnClickListener(aktion);

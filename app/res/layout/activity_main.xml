@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:layout_margin="5pt" >
 
     <Button
         android:id="@+id/button2"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TestRest"
+        android:layout_marginTop="5pt"
         style="@style/btnStyleBreakerBay" />
 
 
@@ -30,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:layout_marginTop="5pt"
         style="@style/btnStyleBreakerBay"  />
 
     <TextView
