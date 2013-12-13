@@ -23,7 +23,7 @@ public class EnterPlates_graph extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_enter_plates_graph);
-		
+
 		Bundle b = getIntent().getExtras();
 		values = b.getIntArray("values");
 		parts = b.getStringArray("parts");
@@ -72,21 +72,34 @@ public class EnterPlates_graph extends Activity {
 		@Override
 		protected void onDraw(Canvas canvas) {
 			super.onDraw(canvas);
-			Random r;
-			for (int i = 0; i < value_degree.length; i++) {
-				if (i == 0) {
-					r = new Random();
-					int color = Color.argb(100, r.nextInt(256), r.nextInt(256),
-							r.nextInt(256));
+			int color = 0;
+			for (int j = 0; j < parts.length; j++) {
+				if (j==0) {
+					if (parts[j].equals("Vegetables")) {
+						color = Color.GREEN;
+					}
+					if (parts[j].equals("Meat")) {
+						color = Color.RED;
+					}
+					if (parts[j].equals("Carbohydrate")) {
+						color = Color.YELLOW;
+					}
 					paint.setColor(color);
-					canvas.drawArc(rectf, 0, value_degree[i], true, paint);
-				} else {
-					temp += value_degree[i - 1];
-					r = new Random();
-					int color = Color.argb(255, r.nextInt(256), r.nextInt(256),
-							r.nextInt(256));
+					canvas.drawArc(rectf, 0, value_degree[j], true, paint);
+				}
+				else {
+					temp += value_degree[j-1];
+					if (parts[j].equals("Vegetables")) {
+						color = Color.GREEN;
+					}
+					if (parts[j].equals("Meat")) {
+						color = Color.RED;
+					}
+					if (parts[j].equals("Carbohydrate")) {
+						color = Color.YELLOW;
+					}
 					paint.setColor(color);
-					canvas.drawArc(rectf, temp, value_degree[i], true, paint);
+					canvas.drawArc(rectf, temp, value_degree[j], true, paint);
 				}
 			}
 		}
