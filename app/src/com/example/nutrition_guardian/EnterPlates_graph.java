@@ -47,7 +47,6 @@ public class EnterPlates_graph extends Activity {
 		for (int i = parts.length; i < text.length; i++) {
 			autocomplete[i].setVisibility(View.INVISIBLE);
 			text[i].setVisibility(View.INVISIBLE);
-			//autocomplete[i].setText(values[i]+" "+parts[i]);
 		}
 		for (int i = 0; i < parts.length; i++) {
 			autocomplete[i].setHint(values[i]+"% "+parts[i]);
@@ -101,16 +100,16 @@ public class EnterPlates_graph extends Activity {
 			for (int j = 0; j < parts.length; j++) {
 				if (j==0) {
 					if (parts[j].equals("Vegetables")) {
-						color = Color.GREEN;
-						autocomplete[j].setBackgroundColor(Color.GREEN);
+						color = Color.rgb(0, 255, 102);
+						autocomplete[j].setBackgroundColor(Color.rgb(0, 255, 102));
 					}
 					if (parts[j].equals("Meat")) {
-						color = Color.RED;
-						autocomplete[j].setBackgroundColor(Color.RED);
+						color = Color.rgb(153, 0, 0);
+						autocomplete[j].setBackgroundColor(Color.rgb(153, 0, 0));
 					}
 					if (parts[j].equals("Carbohydrate")) {
-						color = Color.YELLOW;
-						autocomplete[j].setBackgroundColor(Color.YELLOW);
+						color = Color.rgb(255, 204, 51);
+						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
 					paint.setColor(color);
 					canvas.drawArc(rectf, 0, value_degree[j], true, paint);
@@ -118,16 +117,16 @@ public class EnterPlates_graph extends Activity {
 				else {
 					temp += value_degree[j-1];
 					if (parts[j].equals("Vegetables")) {
-						color = Color.GREEN;
-						autocomplete[j].setBackgroundColor(Color.GREEN);
+						color = Color.rgb(0, 255, 102);
+						autocomplete[j].setBackgroundColor(Color.rgb(0, 255, 102));
 					}
 					if (parts[j].equals("Meat")) {
-						color = Color.RED;
-						autocomplete[j].setBackgroundColor(Color.RED);
+						color = Color.rgb(153, 0, 0);
+						autocomplete[j].setBackgroundColor(Color.rgb(153, 0, 0));
 					}
 					if (parts[j].equals("Carbohydrate")) {
-						color = Color.YELLOW;
-						autocomplete[j].setBackgroundColor(Color.YELLOW);
+						color = Color.rgb(255, 204, 51);
+						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
 					paint.setColor(color);
 					canvas.drawArc(rectf, temp, value_degree[j], true, paint);

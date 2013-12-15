@@ -16,6 +16,16 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal" >
     </LinearLayout>
+    
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear"
+        android:layout_below="@+id/linear"
+        android:ems="10"
+        android:layout_marginLeft="5pt"
+        android:text="" />
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView2"
@@ -50,15 +60,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/autoCompleteTextView4"
         android:layout_below="@+id/autoCompleteTextView4"
-        android:ems="10"
-        android:text="" />
-
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linear"
-        android:layout_below="@+id/linear"
         android:ems="10"
         android:text="" />
 
