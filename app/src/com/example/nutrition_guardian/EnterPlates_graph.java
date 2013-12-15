@@ -47,7 +47,11 @@ public class EnterPlates_graph extends Activity {
 		for (int i = parts.length; i < text.length; i++) {
 			autocomplete[i].setVisibility(View.INVISIBLE);
 			text[i].setVisibility(View.INVISIBLE);
-		}		
+			//autocomplete[i].setText(values[i]+" "+parts[i]);
+		}
+		for (int i = 0; i < parts.length; i++) {
+			autocomplete[i].setHint(values[i]+"% "+parts[i]);
+		}
 
 		// Create the graph
 		lv1 = (LinearLayout) findViewById(R.id.linear);
@@ -98,12 +102,15 @@ public class EnterPlates_graph extends Activity {
 				if (j==0) {
 					if (parts[j].equals("Vegetables")) {
 						color = Color.GREEN;
+						autocomplete[j].setBackgroundColor(Color.GREEN);
 					}
 					if (parts[j].equals("Meat")) {
 						color = Color.RED;
+						autocomplete[j].setBackgroundColor(Color.RED);
 					}
 					if (parts[j].equals("Carbohydrate")) {
 						color = Color.YELLOW;
+						autocomplete[j].setBackgroundColor(Color.YELLOW);
 					}
 					paint.setColor(color);
 					canvas.drawArc(rectf, 0, value_degree[j], true, paint);
@@ -112,12 +119,15 @@ public class EnterPlates_graph extends Activity {
 					temp += value_degree[j-1];
 					if (parts[j].equals("Vegetables")) {
 						color = Color.GREEN;
+						autocomplete[j].setBackgroundColor(Color.GREEN);
 					}
 					if (parts[j].equals("Meat")) {
 						color = Color.RED;
+						autocomplete[j].setBackgroundColor(Color.RED);
 					}
 					if (parts[j].equals("Carbohydrate")) {
 						color = Color.YELLOW;
+						autocomplete[j].setBackgroundColor(Color.YELLOW);
 					}
 					paint.setColor(color);
 					canvas.drawArc(rectf, temp, value_degree[j], true, paint);
