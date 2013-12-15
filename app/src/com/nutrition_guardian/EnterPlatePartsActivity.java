@@ -16,7 +16,7 @@ public class EnterPlatePartsActivity extends Activity{
 	private Button buttonenter;
 	private Spinner spinnerpart;
 	private Spinner spinnersize;
-	private Intent intent;
+	private Intent intentplates;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class EnterPlatePartsActivity extends Activity{
 		spinnerpart = (Spinner) this.findViewById(R.id.spinner1);
 		spinnersize = (Spinner) this.findViewById(R.id.spinner2);
 
-		intent = new Intent(this, EnterPlatesActivity.class);
+		intentplates = new Intent(this, EnterPlatesActivity.class);
 
 		//EnterPlates listener
 		OnClickListener button1 = new OnClickListener() {
@@ -39,9 +39,9 @@ public class EnterPlatePartsActivity extends Activity{
 
 				if (itempart.equals("1")||itempart.equals("2")||itempart.equals("3")||
 						itempart.equals("4")||itempart.equals("5")) {
-					intent.putExtra("part", itempart);
-					intent.putExtra("size", itemsize);
-					EnterPlatePartsActivity.this.startActivity(intent);
+					intentplates.putExtra("part", itempart);
+					intentplates.putExtra("size", itemsize);
+					EnterPlatePartsActivity.this.startActivity(intentplates);
 				}
 				else {
 					Toast toast = Toast.makeText(EnterPlatePartsActivity.this, R.string.warningparts,

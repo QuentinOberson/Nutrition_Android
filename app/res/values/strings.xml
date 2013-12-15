@@ -68,6 +68,10 @@
         <item>Carbohydrate</item>
     </string-array>
     
+    <!-- Graph -->
+    <string name="graphenter">continue</string>
+    <string name="hintgram">gr</string>
+    
     <string name="warningpourcentage">The sum of the % of each part have to be 100%</string>
     
     <string name="warningparts">You have to select a no of parts</string>

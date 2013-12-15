@@ -58,11 +58,6 @@ public class EnterPlatesActivity extends Activity {
 		next.setOnClickListener(nextButtonListener);
 	}
 
-	public void getNoPartsAndSize(String parts, String size){
-		this.part = Integer.parseInt(parts);
-		this.size = size;
-	}
-
 	private OnClickListener nextButtonListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {

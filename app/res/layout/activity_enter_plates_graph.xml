@@ -7,14 +7,121 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EnterPlates_graph" >
+    
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="110pt"
+        android:layout_height="80pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
 
-   <LinearLayout
-       android:id="@+id/linear"
-       android:layout_width="120pt"
-       android:layout_height="90pt"
-       android:layout_alignParentTop="true"
-       android:layout_centerHorizontal="true"
-       android:orientation="horizontal" >
-   </LinearLayout>
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:ems="10"
+        android:text="hallo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView2"
+        android:layout_below="@+id/autoCompleteTextView2"
+        android:ems="10"
+        android:text="hallo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView3"
+        android:layout_below="@+id/autoCompleteTextView3"
+        android:ems="10"
+        android:text="hallo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView4"
+        android:layout_below="@+id/autoCompleteTextView4"
+        android:ems="10"
+        android:text="hallo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear"
+        android:ems="10"
+        android:text="hallo" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear"
+        android:layout_toRightOf="@+id/autoCompleteTextView1"
+        android:ems="10"
+        android:hint="@string/hintgram" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autoCompleteTextView2"
+        android:layout_alignBottom="@+id/autoCompleteTextView2"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:ems="10"
+        android:hint="@string/hintgram" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autoCompleteTextView5"
+        android:layout_alignBottom="@+id/autoCompleteTextView5"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignRight="@+id/editText3"
+        android:ems="10"
+        android:hint="@string/hintgram" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/autoCompleteTextView4"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:ems="10"
+        android:hint="@string/hintgram" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/autoCompleteTextView3"
+        android:ems="10"
+        android:hint="@string/hintgram" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_marginTop="5pt"
+        android:text="@string/graphenter" />
 
 </RelativeLayout>
