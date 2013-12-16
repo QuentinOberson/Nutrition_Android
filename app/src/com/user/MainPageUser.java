@@ -30,6 +30,8 @@ public class MainPageUser extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mainpage_user);
 		
+		setTitle(R.string.titlemainpageuser);
+		
 		buttonProfil = (Button)this.findViewById(R.id.button2); 
 		buttonPlates = (Button)this.findViewById(R.id.button1); 
 		buttonStatistics = (Button)this.findViewById(R.id.button3); 

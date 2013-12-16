@@ -22,6 +22,8 @@ public class EnterPlatePartsActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_enter_plate_parts);
+		
+		setTitle(R.string.titleplateparts);
 
 		buttonenter = (Button) this.findViewById(R.id.button1);
 

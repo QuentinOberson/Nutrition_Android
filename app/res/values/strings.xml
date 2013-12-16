@@ -22,6 +22,7 @@
     <string name="EditProfil">Profil</string>
     <string name="EnterPlates">Enter Plates</string>
     <string name="Statistics">Statistics</string>
+    <string name="titlemainpageuser">userpage</string>
 
     <!-- Language -->
     <string name="lang_prompt">Choose a language</string>
@@ -38,6 +39,7 @@
     <string name="title_activity_statistics">Statistics</string>
 
     <!-- Enter Plates -->
+    <string name="titleplateparts">modify plate</string>
     <string name="pourcentage">0%</string>
     <string name="header">Here enter in percentage your food.</string>
     <string name="next">Next</string>
@@ -69,6 +71,7 @@
     </string-array>
     
     <!-- Graph -->
+    <string name="titlegraph">parts of the plate</string>
     <string name="graphenter">continue</string>
     <string name="hintgram">gr</string>
     

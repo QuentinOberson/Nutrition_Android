@@ -28,6 +28,8 @@ public class EnterPlates_graph extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_enter_plates_graph);
 		
+		setTitle(R.string.titlegraph);
+		
 		autocomplete[0] = (AutoCompleteTextView) this.findViewById(R.id.autoCompleteTextView1);
 		autocomplete[1] = (AutoCompleteTextView) this.findViewById(R.id.autoCompleteTextView2);
 		autocomplete[2] = (AutoCompleteTextView) this.findViewById(R.id.autoCompleteTextView3);
