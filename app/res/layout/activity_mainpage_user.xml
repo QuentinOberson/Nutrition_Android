@@ -28,5 +28,13 @@
         android:layout_height="wrap_content"
         android:text="@string/Statistics"
         android:layout_marginTop="5pt" />
+    
+    <Button
+        android:id="@+id/button4"
+        style="@style/btnStyleBreakerBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Photo"
+        android:layout_marginTop="5pt" />
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.Paint.Style;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -22,7 +23,7 @@ public class EnterPlates_graph extends Activity {
 	
 	private AutoCompleteTextView[] autocomplete = new AutoCompleteTextView[5];
 	private EditText[] text = new EditText[5];
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -83,6 +84,7 @@ public class EnterPlates_graph extends Activity {
 	public class MyGraphview extends View {
 
 		private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+		private Paint paintline = new Paint();
 		private int[] value_degree;
 		RectF rectf = new RectF(50, 5, 180, 135);
 		int temp = 0;
@@ -99,6 +101,9 @@ public class EnterPlates_graph extends Activity {
 		protected void onDraw(Canvas canvas) {
 			super.onDraw(canvas);
 			int color = 0;
+			//the black line in the graph
+			paintline.setColor(Color.BLACK);
+			paintline.setStyle(Style.STROKE);
 			for (int j = 0; j < parts.length; j++) {
 				if (j==0) {
 					if (parts[j].equals("Vegetables")) {
@@ -113,7 +118,8 @@ public class EnterPlates_graph extends Activity {
 						color = Color.rgb(255, 204, 51);
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
-					paint.setColor(color);
+					paint.setColor(color);					
+					canvas.drawArc(rectf, 0-1, value_degree[j]+2, true, paintline);
 					canvas.drawArc(rectf, 0, value_degree[j], true, paint);
 				}
 				else {
@@ -130,7 +136,8 @@ public class EnterPlates_graph extends Activity {
 						color = Color.rgb(255, 204, 51);
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
-					paint.setColor(color);
+					paint.setColor(color);					
+					canvas.drawArc(rectf, temp-1, value_degree[j]+2, true, paintline);
 					canvas.drawArc(rectf, temp, value_degree[j], true, paint);
 				}
 			}
