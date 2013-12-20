@@ -13,9 +13,6 @@ public class UserProfil extends Activity {
 	private EditText email;
 	private EditText password ;
 	
-	
-	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

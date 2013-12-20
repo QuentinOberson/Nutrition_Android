@@ -19,6 +19,8 @@ public class FollowUserActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_follow_user);
+		
+		setTitle(R.string.titleFollowUser);
 
 	}
 	

@@ -21,6 +21,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.doctor.MainPageDoctor;
 import com.example.nutrition_guardian.R;
 import com.user.MainPageUser;
 
@@ -59,12 +60,14 @@ public class LoginActivity extends Activity {
 
 	// Intent
 	private Intent intent_mainUserPage;
+	private Intent intent_mainDoctorPage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		intent_mainUserPage = new Intent(this, MainPageUser.class);
+		intent_mainDoctorPage = new Intent(this, MainPageDoctor.class);
 
 		setContentView(R.layout.activity_login);
 
@@ -251,6 +254,12 @@ public class LoginActivity extends Activity {
 
 			// If login success
 			if (success) {
+				//check if the member is a doctor or a user
+				//if user ->mainPageUser
+				//if doctor ->mainPageDoctor
+				
+				//start the activity mainPageDoctor
+				//LoginActivity.this.startActivity(intent_mainDoctorPage);
 				finish();
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);

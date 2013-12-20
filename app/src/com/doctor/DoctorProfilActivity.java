@@ -19,6 +19,8 @@ public class DoctorProfilActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_doctor_profil);
+		
+		setTitle(R.string.titleDoctorProfil);
 
 	}
 	

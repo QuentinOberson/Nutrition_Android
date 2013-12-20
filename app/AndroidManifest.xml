@@ -58,6 +58,9 @@
             android:label="@string/title_activity_enter_plates_graph" >
         </activity>
         <activity android:name="com.nutrition_guardian.EnterPlatePartsActivity"></activity>
+        <activity android:name="com.doctor.MainPageDoctor"></activity>
+        <activity android:name="com.doctor.DoctorProfilActivity"></activity>
+        <activity android:name="com.doctor.FollowUserActivity"></activity>
     </application>
 
 </manifest>

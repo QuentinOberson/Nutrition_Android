@@ -27,6 +27,10 @@
     <string name="follow">follow a user</string>
     <string name="profildoctor">Profil</string>
     <string name="titlemainpagedoctor">doctor page</string>
+    <string name="titleFollowUser">follow a user</string>
+    <string name="titleDoctorProfil">doctor profil</string>
+    <string name="hintuser">search a user</string>
+    <string name="followuser">show user</string>
 
     <!-- activity_mainpage -->
     <string name="EditProfil">Profil</string>

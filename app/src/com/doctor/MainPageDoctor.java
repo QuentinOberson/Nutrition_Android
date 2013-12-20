@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import com.example.nutrition_guardian.R;
 
-public class MainPageDoctorActivity extends Activity {
+public class MainPageDoctor extends Activity {
 
 	private Intent intent_Profil;
 	private Intent intent_Follow;
@@ -35,14 +35,14 @@ public class MainPageDoctorActivity extends Activity {
 		OnClickListener button1 = new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				MainPageDoctorActivity.this.startActivity(intent_Follow);
+				MainPageDoctor.this.startActivity(intent_Follow);
 			}
 		};
 		// Profil listener
 		OnClickListener button2 = new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				MainPageDoctorActivity.this.startActivity(intent_Profil);
+				MainPageDoctor.this.startActivity(intent_Profil);
 			}
 		};
 		
