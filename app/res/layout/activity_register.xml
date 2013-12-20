@@ -101,9 +101,7 @@
             style="@style/btnStyleBreakerBay"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5pt"
-            android:layout_marginRight="5pt"
-            android:layout_marginTop="5pt"
+            android:layout_margin="5pt"
             android:text="@string/registersave" />
     </LinearLayout>
 </ScrollView>
