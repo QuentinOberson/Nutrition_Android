@@ -25,7 +25,6 @@
         android:layout_marginTop="5pt"
         style="@style/btnStyleBreakerBay" />
 
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"

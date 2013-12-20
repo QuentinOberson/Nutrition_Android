@@ -73,5 +73,4 @@
         android:layout_marginRight="5pt"
         android:layout_marginTop="5pt"
         android:text="@string/update" />
-
 </LinearLayout>

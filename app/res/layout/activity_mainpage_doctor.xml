@@ -22,5 +22,4 @@
         android:layout_marginLeft="5pt"
         android:layout_marginRight="5pt"
         android:text="@string/profildoctor" />
-
 </LinearLayout>
