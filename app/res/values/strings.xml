@@ -17,13 +17,23 @@
     <string name="registration">Please enter all the required specifications.</string>
     <string name="infoUpdate">Here you can update your profil.</string>
     <string name="registersave">Save</string>
+    <string-array name="role">
+        <item>Nothing selected</item>
+        <item>doctor</item>
+        <item>user</item>
+    </string-array>
+    
+    <!-- doctor page -->
+    <string name="follow">follow a user</string>
+    <string name="profildoctor">Profil</string>
+    <string name="titlemainpagedoctor">doctor page</string>
 
     <!-- activity_mainpage -->
     <string name="EditProfil">Profil</string>
     <string name="EnterPlates">Enter Plates</string>
     <string name="Statistics">Statistics</string>
     <string name="Photo">Photo</string>
-    <string name="titlemainpageuser">userpage</string>
+    <string name="titlemainpageuser">user page</string>
 
     <!-- Language -->
     <string name="lang_prompt">Choose a language</string>
@@ -34,7 +44,6 @@
         <item>Deutsch</item>
     </string-array>
 
-    <!-- Language -->
     <string name="title_activity_enter_plates">EnterPlates</string>
     <string name="title_activity_user_profil">UserProfil</string>
     <string name="title_activity_statistics">Statistics</string>

@@ -1,95 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/orange"  >
+    android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:layout_marginTop="5pt"
-        android:text="@string/registration"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/black" />
+        android:background="@drawable/orange"
+        android:orientation="vertical" >
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:entries="@array/lang_arrays" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/registration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:ems="10"
-        android:hint="@string/firstname"
-        android:inputType="textPersonName" >
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:entries="@array/lang_arrays" />
 
-        <requestFocus />
-    </EditText>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:entries="@array/role" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:ems="10"
-        android:hint="@string/lastname"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/firstname"
+            android:inputType="textPersonName" >
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:ems="10"
-        android:hint="@string/birthdate"
-        android:inputType="textPersonName" />
+            <requestFocus />
+        </EditText>
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/lastname"
+            android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textVisiblePassword" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/birthdate"
+            android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/button1"
-        style="@style/btnStyleBreakerBay"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/registersave"
-        android:layout_marginTop="5pt"
-        android:layout_marginLeft="5pt"
-        android:layout_marginRight="5pt" />
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textVisiblePassword" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btnStyleBreakerBay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/registersave" />
+    </LinearLayout>
+</ScrollView>
