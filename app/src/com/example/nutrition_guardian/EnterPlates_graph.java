@@ -119,7 +119,7 @@ public class EnterPlates_graph extends Activity {
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
 					paint.setColor(color);					
-					canvas.drawArc(rectf, 0-1, value_degree[j]+2, true, paintline);
+					canvas.drawArc(rectf, 0-1, value_degree[j]+1, true, paintline);
 					canvas.drawArc(rectf, 0, value_degree[j], true, paint);
 				}
 				else {
@@ -137,7 +137,7 @@ public class EnterPlates_graph extends Activity {
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
 					paint.setColor(color);					
-					canvas.drawArc(rectf, temp-1, value_degree[j]+2, true, paintline);
+					canvas.drawArc(rectf, temp-1, value_degree[j]+1, true, paintline);
 					canvas.drawArc(rectf, temp, value_degree[j], true, paint);
 				}
 			}

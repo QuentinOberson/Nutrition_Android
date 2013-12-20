@@ -5,13 +5,14 @@
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true"
-    android:layout_margin="5pt" >
+    android:background="@drawable/orange" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hintplates"
+        android:layout_margin="5pt"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TableRow
@@ -20,6 +21,7 @@
             android:id="@+id/spinner1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
             android:entries="@array/food" />
 
         <EditText
@@ -36,6 +38,7 @@
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
             android:entries="@array/food" />
 
         <EditText
@@ -52,6 +55,7 @@
             android:id="@+id/spinner3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
             android:entries="@array/food" />
 
         <EditText
@@ -68,6 +72,7 @@
             android:id="@+id/spinner4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
             android:entries="@array/food" />
 
         <EditText
@@ -84,6 +89,7 @@
             android:id="@+id/spinner5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
             android:entries="@array/food" />
 
         <EditText
@@ -98,7 +104,7 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
+        android:layout_margin="5pt"
         android:text="@string/partsenter" />
 
 </TableLayout>

@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="5pt" >
+    android:background="@drawable/orange"  >
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="5pt"
         android:text="@string/registration"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:entries="@array/lang_arrays" />
 
     <EditText
@@ -23,6 +29,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:ems="10"
         android:hint="@string/firstname"
         android:inputType="textPersonName" >
@@ -35,6 +43,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:ems="10"
         android:hint="@string/lastname"
         android:inputType="textPersonName" />
@@ -44,6 +54,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:ems="10"
         android:hint="@string/birthdate"
         android:inputType="textPersonName" />
@@ -53,6 +65,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress" />
@@ -62,6 +76,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textVisiblePassword" />
@@ -72,6 +88,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/registersave"
-        android:layout_marginTop="15pt" />
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt" />
 
 </LinearLayout>

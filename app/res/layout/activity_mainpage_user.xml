@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="5pt" >
+    android:background="@drawable/orange" >
 
     <Button
         android:id="@+id/button1"
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/EnterPlates"
-        android:layout_marginTop="5pt" />
+        android:layout_margin="5pt" />
 
     <Button
         android:id="@+id/button2"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/EditProfil"
-        android:layout_marginTop="5pt" />
+        android:layout_margin="5pt" />
 
     <Button
         android:id="@+id/button3"
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Statistics"
-        android:layout_marginTop="5pt" />
+        android:layout_margin="5pt" />
     
     <Button
         android:id="@+id/button4"
@@ -35,6 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Photo"
-        android:layout_marginTop="5pt" />
+        android:layout_margin="5pt" />
 
 </LinearLayout>
