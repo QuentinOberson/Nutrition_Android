@@ -104,16 +104,16 @@ public class LoginActivity extends Activity {
 	}
 	//Method to change the language
 	public void setLocale(String lang) {
-		 
-        Locale myLocale = new Locale(lang);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, MainPageUser.class);
-        startActivity(refresh);
-    }
+
+		Locale myLocale = new Locale(lang);
+		Resources res = getResources();
+		DisplayMetrics dm = res.getDisplayMetrics();
+		Configuration conf = res.getConfiguration();
+		conf.locale = myLocale;
+		res.updateConfiguration(conf, dm);
+		Intent refresh = new Intent(this, MainPageUser.class);
+		startActivity(refresh);
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
@@ -257,14 +257,24 @@ public class LoginActivity extends Activity {
 				//check if the member is a doctor or a user
 				//if user ->mainPageUser
 				//if doctor ->mainPageDoctor
-				
+
 				//start the activity mainPageDoctor
 				//LoginActivity.this.startActivity(intent_mainDoctorPage);
 				finish();
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);
 				//set the language from the user whoes logged in
-				//setLocale("en");
+				String lang = "";
+				//select language from database
+				if (lang.equals("French")) {
+					setLocale("fr");
+				}
+				if (lang.equals("English")) {
+					setLocale("en");
+				}
+				if (lang.equals("German")) {
+					setLocale("de");
+				}	
 			} else {
 				mPasswordView
 				.setError(getString(R.string.error_incorrect_password));
