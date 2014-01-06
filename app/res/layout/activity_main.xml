@@ -1,43 +1,34 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainpage"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    android:background="@drawable/mainpage" >
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleBreakerBay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/register"
         android:onClick="buttonregister"
-        style="@style/btnStyleBreakerBay" />
-    
-        <Button
-        android:id="@+id/buttonRest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TestRest"
-        android:layout_marginTop="5pt"
-        style="@style/btnStyleBreakerBay" />
+        android:text="@string/register"
+        android:layout_margin="5pt"/>
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleBreakerBay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:layout_marginTop="5pt"
-        style="@style/btnStyleBreakerBay"  />
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:text="@string/login" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="140pt"
+        android:layout_marginLeft="5pt"
         android:text="@string/developer" />
 
-</TableLayout>
+</LinearLayout>
