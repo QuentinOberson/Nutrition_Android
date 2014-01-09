@@ -101,21 +101,28 @@ public class EnterPlates_graph extends Activity {
 		protected void onDraw(Canvas canvas) {
 			super.onDraw(canvas);
 			int color = 0;
-			//the black line in the graph
+			//the black line in the graph to different the parts
 			paintline.setColor(Color.BLACK);
 			paintline.setStyle(Style.STROKE);
 			for (int j = 0; j < parts.length; j++) {
+				//if it's the first part
 				if (j==0) {
+					//if vegetables -> color green
 					if (parts[j].equals("Vegetables")) {
 						color = Color.rgb(0, 255, 102);
+						//the backgroundcolor of the autocompletefield is green
 						autocomplete[j].setBackgroundColor(Color.rgb(0, 255, 102));
 					}
+					//if meat -> color red
 					if (parts[j].equals("Meat")) {
 						color = Color.rgb(153, 0, 0);
+						//the backgroundcolor of the autocompletefield is red
 						autocomplete[j].setBackgroundColor(Color.rgb(153, 0, 0));
 					}
+					//if carbohydrate -> color yellow
 					if (parts[j].equals("Carbohydrate")) {
 						color = Color.rgb(255, 204, 51);
+						//the backgroundcolor of the autocompletefield is yellow
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
 					paint.setColor(color);					
@@ -124,19 +131,25 @@ public class EnterPlates_graph extends Activity {
 				}
 				else {
 					temp += value_degree[j-1];
+					//if vegetables -> color green
 					if (parts[j].equals("Vegetables")) {
 						color = Color.rgb(0, 255, 102);
+						//the backgroundcolor of the autocompletefield is green
 						autocomplete[j].setBackgroundColor(Color.rgb(0, 255, 102));
 					}
+					//if meat -> color red
 					if (parts[j].equals("Meat")) {
 						color = Color.rgb(153, 0, 0);
+						//the backgroundcolor of the autocompletefield is red
 						autocomplete[j].setBackgroundColor(Color.rgb(153, 0, 0));
 					}
+					//if carbohydrate -> color yellow
 					if (parts[j].equals("Carbohydrate")) {
 						color = Color.rgb(255, 204, 51);
+						//the backgroundcolor of the autocompletefield is yellow
 						autocomplete[j].setBackgroundColor(Color.rgb(255, 204, 51));
 					}
-					paint.setColor(color);					
+					paint.setColor(color);
 					canvas.drawArc(rectf, temp-1, value_degree[j]+1, true, paintline);
 					canvas.drawArc(rectf, temp, value_degree[j], true, paint);
 				}

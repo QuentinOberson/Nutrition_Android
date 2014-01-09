@@ -1,17 +1,10 @@
 package com.doctor;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
 import com.example.nutrition_guardian.R;
-import com.nutrition_guardian.EnterPlatePartsActivity;
-import com.nutrition_guardian.StatisticsActivity;
 
 public class DoctorProfilActivity extends Activity {
 

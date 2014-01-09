@@ -255,14 +255,18 @@ public class LoginActivity extends Activity {
 			// If login success
 			if (success) {
 				//check if the member is a doctor or a user
-				//if user ->mainPageUser
+				
 				//if doctor ->mainPageDoctor
-
 				//start the activity mainPageDoctor
-				//LoginActivity.this.startActivity(intent_mainDoctorPage);
-				finish();
+				LoginActivity.this.startActivity(intent_mainDoctorPage);
+				
+				
+				//if user ->mainPageUser
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);
+				
+				finish();
+				
 				//set the language from the user whoes logged in
 				String lang = "";
 				//select language from database
