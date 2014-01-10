@@ -276,15 +276,21 @@ public class LoginActivity extends Activity {
 				
 				intent_mainUserPage.putExtra("objet", currentUser);//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
 				//check if the member is a doctor or a user
-				//if user ->mainPageUser
-				//if doctor ->mainPageDoctor
 				
+				//if doctor ->mainPageDoctor
+
 				//start the activity mainPageDoctor
-				//LoginActivity.this.startActivity(intent_mainDoctorPage);
-				finish();
+				LoginActivity.this.startActivity(intent_mainDoctorPage);
+				
+				
+				//if user ->mainPageUser
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);
 				//set the language from the user who is logged in
+				
+				finish();
+				
+				//set the language from the user whoes logged in
 				String lang = "";
 				//select language from database
 				if (lang.equals("French")) {
