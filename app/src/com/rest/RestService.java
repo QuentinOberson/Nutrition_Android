@@ -72,13 +72,13 @@ public class RestService extends AsyncTask<Void, Void, String> {
 	}
 
 	// GET = on reçoit un objet
-	public Object GetObject() {
+	public Object GetObject(String serviceAddress) {
 
 		HttpClient httpclient = new DefaultHttpClient();
 		HttpContext localContext = new BasicHttpContext();
 		String result = null;
 		HttpGet request = new HttpGet(
-				"http://10.0.2.2:8080/TestRest/rest/hello2/objet");
+				serviceAddress);
 
 		try {
 
@@ -99,13 +99,13 @@ public class RestService extends AsyncTask<Void, Void, String> {
 	}
 	
 	// GET = on reçoit une liste d'objets
-	public String GetObjectList() {
+	public String GetObjectList(String serviceAddress) {
 
 		HttpClient httpclient = new DefaultHttpClient();
 		HttpContext localContext = new BasicHttpContext();
 		String result = null;
 		HttpGet request = new HttpGet(
-				"http://10.0.2.2:8080/TestRest/rest/hello2/liste");
+				serviceAddress);
 
 		try {
 
@@ -125,11 +125,11 @@ public class RestService extends AsyncTask<Void, Void, String> {
 	}
 
 	// POST = on envoie un objet
-	public void PostObject(String stringUser) {
+	public String PostObject(String stringUser, String serviceAddress) {
 
 		HttpClient httpclient = new DefaultHttpClient();
 		HttpPost post = new HttpPost(
-				"http://10.0.2.2:8080/TestRest/rest/hello2/testLogin");
+				serviceAddress);
 		post.setHeader("content-type", "application/json");
 
 		StringEntity entity = null ;
@@ -142,7 +142,16 @@ public class RestService extends AsyncTask<Void, Void, String> {
 			
 			// These is the response of the server, display error message if not okay
 			String respStr = EntityUtils.toString(resp.getEntity());
-			System.out.println(respStr.toString());
+
+			
+			if(!respStr.equals("false"))
+			{
+				return respStr;
+			}
+			else
+			{
+				return "false";
+			}
 			
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
@@ -154,7 +163,7 @@ public class RestService extends AsyncTask<Void, Void, String> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return "false";
 	}
 	
 	// POST = on envoie une liste d'objets

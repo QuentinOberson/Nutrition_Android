@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.businessentities.Commonuser;
 import com.example.nutrition_guardian.R;
 
 public class EnterPlatePartsActivity extends Activity{
@@ -32,6 +33,8 @@ public class EnterPlatePartsActivity extends Activity{
 
 		intentplates = new Intent(this, EnterPlatesActivity.class);
 
+		intentplates.putExtra("objet", (Commonuser) getIntent().getSerializableExtra("objet"));//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
+		
 		//EnterPlates listener
 		OnClickListener button1 = new OnClickListener() {
 			@Override

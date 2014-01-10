@@ -11,7 +11,9 @@
     <!-- activity_register & Profil -->
     <string name="firstname">Firstname</string>
     <string name="lastname">Lastname</string>
-    <string name="birthdate">Birthdate</string>
+    <string name="Day">Day</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
     <string name="email">E-Mail</string>
     <string name="password">Password</string>
     <string name="registration">Please enter all the required specifications.</string>
@@ -86,7 +88,7 @@
     
     <!-- Graph -->
     <string name="titlegraph">parts of the plate</string>
-    <string name="graphenter">continue</string>
+    <string name="graphenter">Save</string>
     <string name="hintgram">gr</string>
     
     <string name="warningpourcentage">The sum of the % of each part have to be 100%</string>

@@ -1,5 +1,7 @@
 package com.login_register;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 import android.animation.Animator;
@@ -22,7 +24,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.doctor.MainPageDoctor;
+import com.example.businessentities.Commonuser;
+import com.example.nutrition_guardian.EnterPlates_graph;
 import com.example.nutrition_guardian.R;
+import com.google.gson.Gson;
+import com.rest.RestService;
 import com.user.MainPageUser;
 
 /**
@@ -68,6 +74,7 @@ public class LoginActivity extends Activity {
 
 		intent_mainUserPage = new Intent(this, MainPageUser.class);
 		intent_mainDoctorPage = new Intent(this, MainPageDoctor.class);
+
 
 		setContentView(R.layout.activity_login);
 
@@ -245,25 +252,39 @@ public class LoginActivity extends Activity {
 
 			// TODO: register the new account here.
 			return true;
-		}
+		}		
 
 		@Override
 		protected void onPostExecute(final Boolean success) {
 			mAuthTask = null;
 			showProgress(false);
 
+			//Check the login
+			List<String> emailAndPassword = new ArrayList<String>();
+			emailAndPassword.add(mEmail);
+			emailAndPassword.add(mPassword);
+			
+			Gson gson = new Gson();
+			String json = gson.toJson(emailAndPassword) ;
+
+			RestService rest1 = new RestService() ;
+			String result = rest1.PostObject(json, "http://10.0.2.2:8080/movieplex7/webresources/commonuser/isregistered");
+			
 			// If login success
-			if (success) {
+			if (!result.equals("false")) {
+				Commonuser currentUser = gson.fromJson(result,  Commonuser.class);
+				
+				intent_mainUserPage.putExtra("objet", currentUser);//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
 				//check if the member is a doctor or a user
 				//if user ->mainPageUser
 				//if doctor ->mainPageDoctor
-
+				
 				//start the activity mainPageDoctor
 				//LoginActivity.this.startActivity(intent_mainDoctorPage);
 				finish();
 				// start the activity mainPageUser
 				LoginActivity.this.startActivity(intent_mainUserPage);
-				//set the language from the user whoes logged in
+				//set the language from the user who is logged in
 				String lang = "";
 				//select language from database
 				if (lang.equals("French")) {

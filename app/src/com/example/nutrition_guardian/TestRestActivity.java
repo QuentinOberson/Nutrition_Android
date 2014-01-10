@@ -2,9 +2,13 @@ package com.example.nutrition_guardian;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.example.businessentities.Commonuser;
+import com.example.businessentities.Language;
 import com.example.businessentities.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -98,6 +102,29 @@ public class TestRestActivity extends Activity {
 		rest1.PostObjectList(gson.toJson(listUsers));
 		*/
 		
+		//FINAL TEST
+		/*
+		Commonuser user1 = new Commonuser(12, "Quentino", "Rappaz", "password") ;
+		user1.setBirthday(new Date(1991, 8, 27));
+		user1.setEmail("blablabla@gmail.com");
+		user1.setFklanguage(new Language(2));
+		
+		Gson gson = new Gson();
+		String json = gson.toJson(user1) ;
+		
+		RestService rest1 = new RestService() ;
+		rest1.PostObject(json, "http://10.0.2.2:8080/movieplex7/webresources/commonuser/");
+		*/
+		
+		RestService rest1 = new RestService() ;
+		
+		String resultat = (String) rest1.GetObject("http://10.0.2.2:8080/movieplex7/webresources/commonuser/find/1") ;
+		
+		Gson gson = new Gson();
+		
+		Commonuser user1 = gson.fromJson(resultat, Commonuser.class);
+		textView1 = (TextView) findViewById(R.id.textViewRest);
+		textView1.setText(user1.getLastname() + " " + user1.getFirstname()) ;
 		
 	}
 

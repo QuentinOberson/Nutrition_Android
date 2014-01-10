@@ -1,5 +1,8 @@
 package com.nutrition_guardian;
 
+import java.lang.reflect.Type;
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +14,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.businessentities.Commonuser;
+import com.example.businessentities.Food;
 import com.example.nutrition_guardian.EnterPlates_graph;
 import com.example.nutrition_guardian.R;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.rest.RestService;
 
 public class EnterPlatesActivity extends Activity {
 
@@ -56,6 +64,8 @@ public class EnterPlatesActivity extends Activity {
 		}
 		
 		next.setOnClickListener(nextButtonListener);
+		
+		intent_enterPlates_graph.putExtra("objet", (Commonuser) getIntent().getSerializableExtra("objet"));//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
 	}
 
 	private OnClickListener nextButtonListener = new View.OnClickListener() {

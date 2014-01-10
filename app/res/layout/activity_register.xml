@@ -64,14 +64,36 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText3"
-            android:layout_width="fill_parent"
+            android:id="@+id/editText3a"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5pt"
             android:layout_marginRight="5pt"
             android:layout_marginTop="5pt"
             android:ems="10"
-            android:hint="@string/birthdate"
+            android:hint="@string/Day"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3b"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/Month"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3c"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="5pt"
+            android:ems="10"
+            android:hint="@string/Year"
             android:inputType="textPersonName" />
 
         <EditText
@@ -104,4 +126,5 @@
             android:layout_margin="5pt"
             android:text="@string/registersave" />
     </LinearLayout>
+
 </ScrollView>

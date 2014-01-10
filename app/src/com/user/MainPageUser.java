@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.example.businessentities.Commonuser;
 import com.example.nutrition_guardian.R;
 import com.nutrition_guardian.EnterPlatePartsActivity;
 import com.nutrition_guardian.StatisticsActivity;
@@ -24,6 +25,7 @@ public class MainPageUser extends Activity {
 	private Button buttonPlates;
 	private Button buttonStatistics;
 	private Button buttonPhoto;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class MainPageUser extends Activity {
 		intent_Statistics = new Intent(this, StatisticsActivity.class);
 		intent_Photo = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
+		intent_Plates.putExtra("objet", (Commonuser) getIntent().getSerializableExtra("objet"));//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
+		
 		// Profil listener
 		OnClickListener button1 = new OnClickListener() {
 			@Override
