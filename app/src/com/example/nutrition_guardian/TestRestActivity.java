@@ -1,23 +1,15 @@
 package com.example.nutrition_guardian;
 
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import com.example.businessentities.Commonuser;
-import com.example.businessentities.Language;
-import com.example.businessentities.User;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.rest.RestService;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.widget.EditText;
 import android.widget.TextView;
+
+
+//this class is for testing the connectivity the rest service to the java server
 
 public class TestRestActivity extends Activity {
 
@@ -27,7 +19,6 @@ public class TestRestActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_test_rest);
-
 			
 		// GET, Récupération avec objet
 		/*
@@ -134,5 +125,4 @@ public class TestRestActivity extends Activity {
 		getMenuInflater().inflate(R.menu.test_rest, menu);
 		return true;
 	}
-
 }

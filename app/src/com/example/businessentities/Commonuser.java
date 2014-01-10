@@ -10,12 +10,6 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import android.widget.EditText;
-
-/**
- *
- * @author Quentin
- */
 public class Commonuser implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
@@ -138,6 +132,5 @@ public class Commonuser implements Serializable {
     @Override
     public String toString() {
         return "org.glassfish.movieplex7.entities.Commonuser[ id=" + id + " ]";
-    }
-    
+    }    
 }

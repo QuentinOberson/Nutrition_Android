@@ -3,10 +3,6 @@ package com.example.businessentities;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- *
- * @author Quentin
- */
 public class Food implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
@@ -94,6 +90,5 @@ public class Food implements Serializable {
     @Override
     public String toString() {
         return enDefinition;
-    }
-    
+    }    
 }

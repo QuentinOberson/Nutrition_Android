@@ -44,6 +44,7 @@ public class EnterPlatePartsActivity extends Activity{
 
 				if (itempart.equals("1")||itempart.equals("2")||itempart.equals("3")||
 						itempart.equals("4")||itempart.equals("5")) {
+					//set the number of parts and the size of plate in extras
 					intentplates.putExtra("part", itempart);
 					intentplates.putExtra("size", itemsize);
 					EnterPlatePartsActivity.this.startActivity(intentplates);

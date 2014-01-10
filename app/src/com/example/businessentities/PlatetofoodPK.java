@@ -2,10 +2,7 @@ package com.example.businessentities;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Quentin
- */
+@SuppressWarnings("serial")
 public class PlatetofoodPK implements Serializable {
     private int fkplate;
     private int fkfood;
@@ -61,7 +58,5 @@ public class PlatetofoodPK implements Serializable {
     @Override
     public String toString() {
         return "org.glassfish.movieplex7.entities.PlatetofoodPK[ fkplate=" + fkplate + ", fkfood=" + fkfood + " ]";
-    }
-    
+    }    
 }
-

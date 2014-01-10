@@ -67,6 +67,7 @@ public class RegisterActivity extends Activity {
 				year = Integer.parseInt(birthdateYear.getText().toString());
 				
 				// Save into DB...
+				@SuppressWarnings("deprecation")
 				Date d = new Date(year-1900, month-1, day);
 				Commonuser user1 = new Commonuser(firstname.getText().toString(), lastname.getText().toString(), d, email.getText().toString(), password.getText().toString(), language) ;
 
@@ -107,5 +108,4 @@ public class RegisterActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 }

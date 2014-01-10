@@ -3,10 +3,6 @@ package com.example.businessentities;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- *
- * @author Quentin
- */
 public class Language implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
@@ -72,7 +68,5 @@ public class Language implements Serializable {
     @Override
     public String toString() {
         return "org.glassfish.movieplex7.entities.Language[ id=" + id + " ]";
-    }
-    
+    }    
 }
-

@@ -6,12 +6,20 @@ import android.app.Activity;
 import android.view.Menu;
 import android.widget.EditText;
 
+//when this screen is called, the editTextFields will be completed with the data of the user
+//from the database.
+//not enough time to implement, that this editTextFields automatically completed with the 
+//data from the database
 public class UserProfil extends Activity {
 
-	private EditText firstname ;
+	@SuppressWarnings("unused")
+	private EditText firstname;
+	@SuppressWarnings("unused")
 	private EditText lastname;
+	@SuppressWarnings("unused")
 	private EditText email;
-	private EditText password ;
+	@SuppressWarnings("unused")
+	private EditText password;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +27,9 @@ public class UserProfil extends Activity {
 		setContentView(R.layout.activity_user_profil);
 		
 		firstname = (EditText) findViewById(R.id.editText1);
-		firstname = (EditText) findViewById(R.id.editText2);
-		firstname = (EditText) findViewById(R.id.editText3);
-		firstname = (EditText) findViewById(R.id.editText4);
-		
+		lastname = (EditText) findViewById(R.id.editText2);
+		email = (EditText) findViewById(R.id.editText3);
+		password = (EditText) findViewById(R.id.editText4);		
 	}
 
 	@Override
@@ -31,5 +38,4 @@ public class UserProfil extends Activity {
 		getMenuInflater().inflate(R.menu.user_profil, menu);
 		return true;
 	}
-
 }

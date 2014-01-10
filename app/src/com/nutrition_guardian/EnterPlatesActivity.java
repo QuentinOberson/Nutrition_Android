@@ -1,8 +1,5 @@
 package com.nutrition_guardian;
 
-import java.lang.reflect.Type;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +12,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.businessentities.Commonuser;
-import com.example.businessentities.Food;
 import com.example.nutrition_guardian.EnterPlates_graph;
 import com.example.nutrition_guardian.R;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.rest.RestService;
 
 public class EnterPlatesActivity extends Activity {
 
@@ -28,6 +21,7 @@ public class EnterPlatesActivity extends Activity {
 	private Button next;
 
 	private int part;
+	@SuppressWarnings("unused")
 	private String size;
 	
 	private Spinner [] spinner = new Spinner[5];
@@ -46,6 +40,7 @@ public class EnterPlatesActivity extends Activity {
 		part = Integer.parseInt(extras.getString("part"));
 		size = extras.getString("size");
 
+		//declare the spinners and edittexts
 		spinner[0] = (Spinner) this.findViewById(R.id.spinner1);
 		spinner[1] = (Spinner) this.findViewById(R.id.spinner2);
 		spinner[2] = (Spinner) this.findViewById(R.id.spinner3);
@@ -58,6 +53,7 @@ public class EnterPlatesActivity extends Activity {
 		text[3] = (EditText) this.findViewById(R.id.editText4);
 		text[4] = (EditText) this.findViewById(R.id.editText5);
 		
+		//just show the number of parts from the previous screen
 		for (int i = part; i < spinner.length; i++) {
 			spinner[i].setVisibility(View.INVISIBLE);
 			text[i].setVisibility(View.INVISIBLE);

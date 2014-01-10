@@ -2,7 +2,6 @@ package com.example.businessentities;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 /**
  * The persistent class for the user database table.
@@ -81,5 +80,4 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 }

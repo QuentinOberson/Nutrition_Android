@@ -2,10 +2,6 @@ package com.example.businessentities;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Quentin
- */
 public class Platetofood implements Serializable {
     private static final long serialVersionUID = 1L;
     protected PlatetofoodPK platetofoodPK;
@@ -91,6 +87,5 @@ public class Platetofood implements Serializable {
     @Override
     public String toString() {
         return "org.glassfish.movieplex7.entities.Platetofood[ platetofoodPK=" + platetofoodPK + " ]";
-    }
-    
+    }    
 }

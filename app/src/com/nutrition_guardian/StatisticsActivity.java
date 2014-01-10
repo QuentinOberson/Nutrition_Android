@@ -20,6 +20,8 @@ public class StatisticsActivity extends Activity {
 		
 		List <String> ListStatistics = new ArrayList <String>();
 		
+		//just to have some example datas for the statistics screen.
+		// we removed the statistics from the sprint 3, so we didn't continue with this.
 		ListStatistics.add("hallo");
 		ListStatistics.add("ciao");
 		

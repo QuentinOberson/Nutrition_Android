@@ -10,13 +10,10 @@ import com.example.businessentities.Plate;
 import com.example.businessentities.Platetofood;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.login_register.LoginActivity;
-import com.nutrition_guardian.MainActivity;
 import com.nutrition_guardian.StatisticsActivity;
 import com.rest.RestService;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
@@ -179,6 +176,7 @@ public class EnterPlates_graph extends Activity {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private Commonuser getCommonuser()
 	{
 		Gson gson = new Gson() ;

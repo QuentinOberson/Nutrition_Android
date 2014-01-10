@@ -25,7 +25,6 @@ import android.widget.TextView;
 
 import com.doctor.MainPageDoctor;
 import com.example.businessentities.Commonuser;
-import com.example.nutrition_guardian.EnterPlates_graph;
 import com.example.nutrition_guardian.R;
 import com.google.gson.Gson;
 import com.rest.RestService;
@@ -66,6 +65,7 @@ public class LoginActivity extends Activity {
 
 	// Intent
 	private Intent intent_mainUserPage;
+	@SuppressWarnings("unused")
 	private Intent intent_mainDoctorPage;
 
 	@Override
@@ -275,13 +275,14 @@ public class LoginActivity extends Activity {
 				Commonuser currentUser = gson.fromJson(result,  Commonuser.class);
 				
 				intent_mainUserPage.putExtra("objet", currentUser);//VERY BAD CODE BUT NOT ENOUGH TIME TO OPTIMISE
+				
 				//check if the member is a doctor or a user
 				
 				//if doctor ->mainPageDoctor
 
+				//didn't have time to implement the doctor page
 				//start the activity mainPageDoctor
-				LoginActivity.this.startActivity(intent_mainDoctorPage);
-				
+				//LoginActivity.this.startActivity(intent_mainDoctorPage);
 				
 				//if user ->mainPageUser
 				// start the activity mainPageUser
@@ -289,7 +290,6 @@ public class LoginActivity extends Activity {
 				//set the language from the user who is logged in
 				
 				finish();
-				
 				//set the language from the user whoes logged in
 				String lang = "";
 				//select language from database
